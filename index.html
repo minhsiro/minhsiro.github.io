@@ -1,0 +1,218 @@
+<!DOCTYPE html lang="en">
+<html>
+<head
+    <meta charset="utf-8">
+    <meta name="keywords" content="portfolio, personal">
+    <meta name="author" content="Minh SiRo">
+    <meta name="description" content="my personal portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/css/App.css">
+    <link rel="stylesheet" href="./styles/css/Animation.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link
+    href="https://fonts.googleapis.com/css?family=Poppins"
+    rel="stylesheet"
+    />
+    <script type="module" src="scripts/app.js" defer></script>
+    <script type="module" src="scripts/Intersection.js" defer></script>
+
+    <link rel="shortcut icon" href="#" />
+    <title>Portfolio</title>
+</head>
+
+<body class="dark">
+  <!-- navigation bar -->
+  <nav>
+    <div class="menu">
+      <a><span id="menu-icon" class="material-icons-outlined">menu</span></a>
+      <div class="nav-container">
+        <ul>
+          <li><a class="is-active" href="#home">home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#service">service</a></li>
+          <li><a href="#work">work</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+
+
+    <div id="home" class="home section">
+      <button class="dark-mode-btn"><span class="dark-mode-icon">☾</span></button>
+
+      <div class="home-content">
+        <h1>
+          - Hi, I am <span>MinhSiro.</span><br />
+          <i>a web developer</i>
+        </h1>
+        <p>
+          I'm a Tunisian based web designer & front‑end developer focused on
+          crafting clean & user‑friendly experiences, I am passionate about
+          building excellent software that improves the lives of those around
+          me.
+        </p>
+        <div class="btn-container">
+          <button class="movetowork-btn">
+            <a href="#work">See projects<div class="span1-container"><span>&#x1F844;</span></div>
+            </a>
+          </button>
+          <button class="aboutme-btn">
+
+            <a href="#about"><div class="span2-container"><span>&#x1F846;</span></div>
+               More about me</a>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+
+  <div class="about-section section" id = "about">
+    <h1>ABOUT ME</h1>
+
+    <div class="personal-info">
+
+    <div class="info-container">
+      <h2>PERSONAL INFOS</h2>
+      <ul class="info-details">
+        <li><p>First Name: <span>Minh</span></p></li>
+        <li><p>Last Name: <span>Luu Dinh</span></p></li>
+        <li><p>Age: <span>22</span></p></li>
+        <li><p>Nationality: <span>VNese</span></p></li>
+        <li><p>Freelance: <span>...</span></p></li>
+        <li><p>Address: <span>Ha Noi</span></p></li>
+        <li><p>Phone:<span>xxx123456</span></p></li>
+        <li><p>Email: <span>minhsiro99</span></p></li>
+        <li><p>Github: <span>MinhSiro</span></p></li>
+        <li><p>languages: <span>VNese, EN, JPese</span></p></li>
+      </ul>
+    </div>
+
+    <ul class="achieve-container">
+      <li>
+        <h2>...</h2>
+          <p>Years of experience</p>
+        </li>
+
+      <li>
+        <h2>...</h2>
+          <p>completed projects</p>
+        </li>
+
+      <li>
+        <h2>...</h2>
+        <p>happy customers</p>
+      </li>
+
+      <li>
+        <h2>...</h2>
+        <p>achievements</p>
+      </li>
+    </ul>
+
+    </div>
+
+
+
+    <h1 class="about-title">FRONT END FOCUSED & <br>
+      LEARNING TO BECOME A FULL-STACK DEVELOPER</h1>
+    <div class="about-content">
+      <div class="info-container">
+        <h3>Motivated to produce results</h3>
+        <p>As a tenacious self-taught programmer, I use continuous iteration to produce results quickly and continuously improve products.</p>
+        <h3>Motivated to produce results</h3>
+        <p>As a tenacious self-taught programmer, I use continuous iteration to produce results quickly and continuously improve products.</p>
+      </div>
+
+
+      <div class="logos-container">
+        <img  src="./images/js256.png" alt="js-image">
+        <img src="./images/react256.png" alt="react-image">
+        <img src="./images/nodejs256.png" alt="nodejs-image">
+        <img src="./images/angular256.png" alt="angular-image">
+        <img src="./images/html256_1.png" alt="html-mage">
+        <img src="./images/css256_1.png" alt="css-image">
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="service-section section" id = "service">
+    <ul class="cards-container">
+      <li>
+        <span class="material-icons">phonelink</span>
+        <div class="card-content">
+        <h3>FRONT END</h3>
+          <p><span class="tag">&lt;</span> HTML5 <span class="tag">&#47;&gt;</span></p>
+          <p><span class="tag">&lt;</span> CSS | SASS <span class="tag">&#47;&gt;</span></p>
+          <p><span class="tag">&lt;</span> JavaScript | Typescript <span class="tag">&#47;&gt;</span></p>
+          <p><span class="tag">&lt;</span> React | Redux <span class="tag">&#47;&gt;</span></p>
+      </div>
+      </li>
+
+
+    <li class="card">
+      <span class="material-icons-two-tone">share</span>
+      <div class="card-content">
+        <h3>SERVER</h3>
+        <p><span class="tag">&lt;</span> Node.js <span class="tag">&#47;&gt;</span></p>
+        <p><span class="tag">&lt;</span> Express.js <span class="tag">&#47;&gt;</span></p>
+        <p><span class="tag">&lt;</span> SQL <span class="tag">&#47;&gt;</span></p>
+      </div>
+    </li>
+
+    <li class="card">
+      <span class="material-icons-outlined">storage</span>
+      <div class="card-content">
+        <h3>DATABASE</h3>
+        <p><span class="tag">&lt;</span> PostpreSQL <span class="tag">&#47;&gt;</span></p>
+        <p><span class="tag">&lt;</span> MongoDB <span class="tag">&#47;&gt;</span></p>
+        <p><span class="tag">&lt;</span> mySQL <span class="tag">&#47;&gt;</span></p>
+        <p><span class="tag">&lt;</span> Redis <span class="tag">&#47;&gt;</span></p>
+      </div>
+    </li>
+
+    <li class="card">
+      <span class="material-icons-outlined">filter_drama</span>
+      <div class="card-content">
+        <h3>DEPLOYMENT</h3>
+        <p><span class="tag">&lt;</span> AWS <span class="tag">&#47;&gt;</span></p>
+        <p><span class="tag">&lt;</span> Azure <span class="tag">&#47;&gt;</span></p>
+        <p><span class="tag">&lt;</span> Google Cloud <span class="tag">&#47;&gt;</span></p>
+        <p><span class="tag">&lt;</span> Docker <span class="tag">&#47;&gt;</span></p>
+      </div>
+    </li>
+
+  </div>
+
+  <div class="work-section section" id= "work">
+    <div class="work-title">Project Portfolio</div>
+    <div class="projects-container">
+      <div class="project"></div>
+      <div class="project"></div>
+      <div class="project"></div>
+      <div class="project"></div>
+      <div class="project"></div>
+      <div class="project"></div>
+    </div>
+  </div>
+
+
+  <div class="contact-section section" id= "contact">
+    <div class="contact-title">
+      <h1>Let's work together...</h1>
+      <p><i>How to contact me</i></p>
+      <div class="flex5">
+        <div class="info"><a href="https://www.facebook.com/minhsiro99" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></div>
+        <div class="info"><a href="https://github.com/MinhSiRo" target="_blank"><i class="fab fa-github"></i> Github</a></div>
+        <div class="info"><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><i class="fas fa-envelope"></i> Email</a></div>
+        <div class="info"><i class="fas fa-phone-square-alt"></i> Call me</div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

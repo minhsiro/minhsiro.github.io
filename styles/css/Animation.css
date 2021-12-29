@@ -1,0 +1,77 @@
+
+
+.slide-up {
+  animation: slide_up 2000ms ease;
+  opacity: 1;
+
+}
+.slide-left {
+  animation: slide_left 1000ms ease;
+}
+.slide-right {
+  animation: slide_right 1000ms 500ms ease;
+
+}
+.slide-down {
+  animation-name: slide_down;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  opacity: 0;
+
+}
+@keyframes slide_down {
+  0% {
+    opacity: 0;
+    transform: translateY(-7vh);
+
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide_up {
+  0% {
+    opacity: 0;
+    transform: translateY(7vh);
+
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.anim-delay-300 {
+  transition-delay: 300ms;
+}
+
+.anim-delay-400 {
+  transition-delay: 400ms;
+}
+
+.anim-delay-500 {
+  transition-delay: 500ms;
+}
+
+.anim-delay-1000 {
+  transition-delay: 1000ms;
+}
+
+.anim-delay-1200 {
+  transition-delay: 1200ms;
+}
+
+.anim-delay-1500 {
+  transition-delay: 1500ms;
+}
+
+.anim-delay-2000 {
+  transition-delay: 2000ms;
+}
+
+.anim-delay-3000 {
+  transition-delay: 3000ms;
+}
