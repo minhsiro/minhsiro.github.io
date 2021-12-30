@@ -467,7 +467,7 @@ nav {
   }
   .skills {
     font-size: calc(clamp(3em, 3em + 2vw, 7em));
-    margin: 1.5em 0 1em 0;
+    margin: 1.5em 0 0 0;
     text-align: center;
     transition: 0.4s ease-out;
     background-image: -webkit-linear-gradient(92deg, #ee189c, #feab3a);
@@ -482,6 +482,7 @@ nav {
     flex-direction: row;
     flex-wrap: wrap;
     border: 1px solid white;
+    margin-bottom: 3em;
     width: 90%;
     img {
       width: calc(clamp(120px, 45%, 260px));
@@ -572,7 +573,6 @@ nav {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    border: 1px solid white;
     width: 80%;
     margin: 10em 0;
 
@@ -583,7 +583,6 @@ nav {
       flex-direction: column;
       width: 15em;
       height: 16em;
-
       background-color: white;
       opacity: 0.7;
       margin: 1em 1em;
@@ -600,7 +599,6 @@ nav {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        border: 1px solid white;
 
         h3 {
           margin: 0;
@@ -673,7 +671,6 @@ nav {
 .work-section {
   min-height: 100vh;
   width: 100%;
-  border: 1px solid white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -697,15 +694,15 @@ nav {
     flex-direction: row;
     flex-wrap: wrap;
     width: calc(clamp(350px,80%,1300px));
-    border: 1px solid white;
+
     .project {
       position: relative;
       margin: 1em;
       min-height: 17em;
       width: calc(clamp(280px, 45%, 350px));
-      border: 1px solid white;
       border-radius: 1em;
       height: 15em;
+
       img {
         width: 100%;
         height: 100%;
@@ -719,13 +716,11 @@ nav {
         position: absolute;
         text-align: center;
         bottom :0;
-        height: 20%;
+        height: 100%;
         width: 100%;
-        z-index:3;
-        border-top: 1px solid white;
-        background: rgba(black, 0.6);
-        border-radius: 0 0 1em 1em;
+        border-radius: 1em;
         transition: height 400ms ease;
+        background: rgba(black,0.5);
         cursor: pointer;
         h3 {
           margin: 0;
@@ -735,41 +730,54 @@ nav {
         }
         p {
           color:var(--light-color);
-          display: none;
-
           span {
             color:#f35626;
           }
         }
-
-
       }
-      &:before {
-        content: "";
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        border-radius: 1em;
-        background: rgba(black, 0.6);
-        z-index: 2;
-        transition: 0.5s;
-        opacity: 0;
+    }
+  }
+}
+@media all and (min-width:768px) {
+  .work-section {
+    .projects-container {
+      .project {
+        width: calc(clamp(250px, 35%, 320px));
       }
-      &:hover {
-        background-color: rgba(black,0.6);
+    }
+  }
+}
+
+@media all and(min-width: 992px) {
+  .work-section {
+    .projects-container {
+      .project {
+        transition: transform 400ms ease;
         .project-content {
           height: 100%;
-          background-color: transparent;
-          p{
-            display: block;
+          background: none;
+          border-radius: 0 0 1em 1em;
+          & > * {
+            transition: all 400ms ease;
+            transform: translateY(1em);
+            opacity: 0;
           }
-
         }
-        &:before {
-          opacity: 1;
+        &:hover {
+          transform: translateY(0.5em);
+          .project-content {
+            height: 100%;
+            border-radius: 1em;
+            background: rgba(black,0.4);
+            & > * {
+              transform: translateY(0);
+              opacity: 1;
+            }
+          }
         }
       }
+
+
     }
   }
 }
@@ -777,11 +785,11 @@ nav {
 
 
 
-
 .contact-section {
   width: 100%;
-  border: 1px solid white;
   min-height: 90vh;
-
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(111,44,153,1) 0%, rgba(64,26,168,1) 100%);
+  clip-path: polygon(0% 0%, 100% 7%, 100% 100%, 0% 100%);
 
 }

@@ -41,3 +41,10 @@ darkModeToggle.addEventListener("click", () => {
 
 
 
+// handle submit
+let submitBtn = document.getElementsByClassName("input-submit")[0];
+submitBtn.addEventListener("click", (event) => {
+
+})
+
+
