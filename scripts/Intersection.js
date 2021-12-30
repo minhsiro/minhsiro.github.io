@@ -9,7 +9,7 @@ let sections = document.querySelectorAll(".section");
 let options = {
   root: null,
   rootMargin: "0px",
-  threshold: 0.5
+  threshold: 0.3
 }
 let count = 0;
 let sectionObserver = new IntersectionObserver((entries, observer) => {
