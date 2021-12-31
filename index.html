@@ -89,18 +89,21 @@
         <li><p>Github: <span>MinhSiro</span></p></li>
         <li><p>languages: <span>VNese, EN, JPese</span></p></li>
       </ul>
-      <button>DOWNLOAD CV <span class="material-icons-round">download</span>
+      <a href="./downloads/LuuDinhMinh_CV_WEB.docx">
+      <button class="download-btn"><p>download CV</p>
+        <span class="material-icons-round">download</span>
         </button>
+      </a>
     </div>
 
     <ul class="achieve-container">
       <li>
-        <h2>...</h2>
+        <h2>0.4</h2>
           <p>Years of experience</p>
         </li>
 
       <li>
-        <h2>...</h2>
+        <h2>6</h2>
           <p>completed projects</p>
         </li>
 
@@ -120,10 +123,8 @@
     <div class="about-title">FRONT END FOCUSED & <br>
       LEARNING TO BECOME A FULL-STACK DEVELOPER</div>
     <div class="about-content">
-        <h3>Motivated to produce results</h3>
-        <p>As a tenacious self-taught programmer, I use continuous iteration to produce results quickly and continuously improve products.</p>
-        <p>As a tenacious self-taught programmer, I use continuous iteration to produce results quickly and continuously improve products.</p>
-      </div>
+      <p>As a tenacious self-taught programmer, I use continuous iteration to produce results quickly and continuously improve products.</p>
+    </div>
 
         <h3 class="skills">MY SKILLS</h3>
       <div class="logos-container">
@@ -133,6 +134,33 @@
         <img src="./images/angular256.png" alt="angular-image">
         <img src="./images/html256_1.png" alt="html-mage">
         <img src="./images/css256_1.png" alt="css-image">
+      </div>
+
+      <!-- fun facts -->
+      <h3 class="fact-title">Fun Facts</h3>
+      <div class="fact-container">
+        <div class="fact">
+          <h4>Programming</h4>
+          <p>I like Programming. The idea of putting building blocks together and creating things
+            is a wonderful feeling to have. I have always been a software person. The thing that I like
+            about programming is that you can tell the computer to do something and It will do just that,
+            nothing more. This is also the reason that there are bugs in our code. We created the bugs, not the computers. With coding, you can help create things at the largest imaginable scale.
+          </p>
+        </div>
+        <div class="fact">
+          <h4>Languages</h4>
+          <p>
+            When I was a kid, I had always been wondering how can some people be so good at English, how does it
+            feel like and dreaming that one day, I will be just as good as that. Now that I am at it, I feel like it just the beginning.
+            I am currently studying Japanese and I have the same feeling for Japanese that I have for English. Years from now, after I truly understand Japanse, I might be reaching for something and I am gonna keep doing that until I am tired.
+          </p>
+        </div>
+        <div class="fact">
+          <h4>Hand Balancing</h4>
+          <p>
+            When I was young, I had always been skinny but then, during my university years, I lost control of my eating habits and went up to 70kg, which was when I decided I need a change. One day, I came across a video of people doing hand balancing on Youtube and I was immediately hooked. The idea of being able to control your entire body upside down and moving freely space is indescribable. I am currently going for the OAHS.
+          </p>
+        </div>
       </div>
   </div>
 
@@ -275,20 +303,55 @@
       </a>
       </div>
     </div>
+
   </div>
   <div class="contact-section section" id= "contact">
-    <div>
+    <div class="contact-container">
       <div class="contact-info">
         <h1>DON'T BE SHY</h1>
         <p>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
-
+        <div class="details">
+          <img src="images/address.png">
+          <a href="https://www.google.com/maps/place/3+P.+L%C3%A1ng+H%E1%BA%A1,+Th%C3%A0nh+C%C3%B4ng,+Ba+%C4%90%C3%ACnh,+H%C3%A0+N%E1%BB%99i,+Vietnam/@21.022338,105.8169243,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab70741d2393:0x121fe2f4754726a2!8m2!3d21.022338!4d105.819113" target="_blank">
+          <div>
+            <h3>Address point</h3>
+            <p>No.3, Lang Ha, Dong Da, Ha Noi.</p>
+          </div>
+        </a>
+        </div>
+        <div class="details">
+          <img src="images/phone-call.png">
+          <a href="https://zalo.me/pc" target="_blank">
+          <div>
+            <h3>Call me</h3>
+            <p>0385140480</p>
+          </div>
+        </a>
+        </div>
+        <div class="details">
+          <img src="images/email.png">
+          <a href="https://mail.google.com/" target="_blank">
+            <div>
+              <h3>Email me</h3>
+              <p>minhsiro99@mail.com</p>
+            </div>
+          </a>
+        </div>
+        <div class="details">
+          <img src="images/github64.png">
+          <a href="https://github.com/minhsiro" target="_blank">
+          <div>
+            <h3>Visit my Github</h3>
+            <p>go to Github</p></a>
+          </div>
+        </div>
       </div>
       <div class="form-info">
         <form action="#">
-          <input class="input-name" type="text" pattern="^(?!.*\d)[a-zA-Z]{6,20}$"  required>
-          <input class="input-email" type="text" pattern="^(?=.*\d)(?=.*\D)[a-zA-Z0-9]{6,18}@[a-zA-Z]{3,5}\.[a-zA-Z]{3}$"  required>
-          <input class="input-subject" type="text" pattern="^.{5,30}$"  required>
-          <input class="input-content" type="text" pattern=".{2,200}" required>
+          <input class="input-name" id="fname" name="fname" type="text" pattern="^.{3,40}$" placeholder="Name" required>
+          <input class="input-email" id="email" name="email" type="email" pattern="^(?=.*\d)(?=.*\D)[a-zA-Z0-9]{6,18}@[a-zA-Z]{3,5}\.[a-zA-Z]{3}$" placeholder="Email" required>
+          <input class="input-subject" id="subject" name="subject" type="text" pattern="^.{5,30}$" placeholder="Subject" required>
+          <textarea class="input-content" id="input-content" name="input-content" pattern=".{2,200}" placeholder="Content" required></textarea>
           <button class="input-submit" type="submit">Submit</button>
         </form>
       </div>

@@ -18,6 +18,7 @@ let sectionObserver = new IntersectionObserver((entries, observer) => {
       return;
     else {
       if(entry.target.classList.contains("home")  && count === 0) {
+        // animation
         navContainer.classList.add("slide-down");
         homeContent.classList.add("slide-up");
         count +=1;
@@ -49,7 +50,6 @@ let sectionObserver = new IntersectionObserver((entries, observer) => {
 sections.forEach((section) => {
   sectionObserver.observe(section);
 })
-
 
 
 
