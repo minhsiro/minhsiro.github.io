@@ -57,9 +57,7 @@ body.dark {
 
 html, body {
   scroll-behavior: smooth;
-  overflow: scroll;
   scrollbar-width: none;
-  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -146,7 +144,7 @@ nav {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
-  z-index: 10;
+  z-index: 20;
   -webkit-transition: all 1000ms ease;
   transition: all 1000ms ease;
   background-color: transparent;
